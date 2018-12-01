@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Marcel Gertsch">
+  <link href="css/vars.css" rel="Stylesheet">
+  <link href="css/main.css" rel="Stylesheet">
+  <link href="img/favicon.ico" rel="icon">
+  <script src="js/main.js"></script>
+  <title>Marcel's Bewerbungsprojekt</title>
+</head>
+
+<body>
+  <!-- Leitet Benutzer mit IE weiter, da IE nicht unterstützt wird. -->
+  <script>
+    if ((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true )) {
+      window.location = "internetexplorer";
+    }
+  </script>
+  <!-- Headerbild + Navbalken + Navigation -->
+  <header>
+    <!-- Section 1: Headerbilder mit Logo -->
+    <section>
+      <div class="header-image"></div>
+      <div class="header-cover"></div>
+      <p class="header-text">m</p>
+    </section>
+
+    <!-- Section 2: Navigation -->
+    <section>
+      <div class="nav-balken" id="stickynav">
+
+        <!-- das Hamburgermenu-->
+        <div id="menu" onclick="navReinRaus()">
+          <div id="linie1"></div>
+          <div id="linie2"></div>
+          <div id="linie3"></div>
+        </div>
+
+        <!-- die eigentlich Navigation mit Dropdown -->
+        <nav id="nav-menu-nav">
+          <ul>
+            <li><a href="https://marcel.gertsch.be">Home</a></li>
+            <li><a href="lebenslauf">Lebenslauf</a></li>
+            <li><a href="javascript:void(0)" onclick="dropdownToggle()">Mehr über mich<i class="" id="dropdownicon"></i></a></li>
+          </ul>
+
+          <!-- Dropdown Menu -->
+          <div id="nav-dropdown">
+            <ul>
+              <li><a target="_blank" href="https://github.com/thebauzz">Github</a></li>
+              <li><a target="_blank" href="https://instagram.com/thebauzz">Instagram</a></li>
+              <li><a href="projekte">Projekte</a></li>
+            </ul>
+          </div>
+        </nav>
+
+      </div>
+    </section>
+    <div class="unsichtbar" id="leerecontainer" onclick="wegMitAllem()"></div>
+  </header>
+  <!-- Seiteninhalt -->
+  <main>
+    <!-- 1. Teil Lebensauf -->
+    <article id="art-lebenslauf-1">
+      <p>
+        <strong>31.07.1999</strong>
+        <br>
+        geboren
+        <br>
+        im Kantonsspital Baar
+      </p>
+    </article>
+
+    <!-- 2. Teil Lebenslauf -->
+    <article id="art-lebenslauf-2">
+      <p>
+        <strong>2006 - 2011</strong>
+        <br>
+        Primarschule
+        <br>
+        im Schulhaus Riedmatt, Zug
+      </p>
+    </article>
+
+    <!-- 3. Teil Lebenslauf -->
+    <article id="art-lebenslauf-3">
+      <p>
+        <strong>2011 - 2014</strong>
+        <br>
+        Sekundarschule
+        <br>
+        Sekundarstufe Niveau A
+        <br>
+        im Schulhaus Loreto, Zug
+      </p>
+    </article>
+
+    <!-- 4. Teil Lebenslauf -->
+    <article id="art-lebenslauf-4">
+      <p>
+        <strong>2015 - 2016</strong>
+        <br>
+        KV Lehre
+        <br>
+        bei der Crypto AG, Steinhausen
+      </p>
+    </article>
+
+    <!-- 5. Teil Lebenslauf -->
+    <article id="art-lebenslauf-5">
+      <p>
+        <strong>2016 - 2017</strong>
+        <br>
+        kaufmännischer Angestellter bei der ZVB, Zug
+        <br>
+        Sprachaufenthalt in Vancouver, CA
+      </p>
+    </article>
+
+    <!-- 6. Teil Lebenslauf -->
+    <article id="art-lebenslauf-6">
+      <p>
+        <strong>seit 2017</strong>
+        <br>
+        Informatiklernender Fachrichtung Applikationsentwicklung
+        <br>
+        bei der WISS, Zürich
+      </p>
+    </article>
+  </main>
+
+  <!-- Farbverlauf vor dem Footer -->
+  <div class="prefooter"></div>
+  <!-- Footer -->
+  <footer>
+    <!-- Kontaktabschnitt im Footer -->
+    <h3>Kontakt</h3>
+    <p>
+      <strong>Marcel Gertsch</strong><br>
+      Funkstrasse 75<br>
+      3084 Wabern<br>
+      <br>
+      Mobil: 079 213 1999<br>
+      E-Mail: <a href="mailto:marcel@gertsch.be">marcel@gertsch.be</a>
+    </p>
+
+    <!-- Mein Logo im rechten Bereich -->
+    <img src="img/mlogo-light.png" alt="M-Logo" class="footerlogo" onclick="window.location = 'https://marcel.gertsch.be/'">
+  </footer>
+</body>
+</html>
